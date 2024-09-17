@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio WR</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    </head>
 <body>
-    <header>
-        <!-- Menú de navegación -->
-        <nav>
-            <ul>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="sobre-mi.html">Sobre Mí</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="curriculum.html">Currículum</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="curriculum.html">Currículum</a></li>                
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <!-- Contenido principal -->
+    </header>  
+    <main>        
         <h1>Portfolio</h1>
-        <section>
-            <p>
-                Adquirí mis conocimientos en programación a través de diversos cursos que me permitieron construir una sólida base técnica.
-                Mi primer proyecto fue una página web sobre Japón y sus costumbres, desarrollada utilizando HTML y JavaScript. 
-                <a href="https://walterjromero.github.io/La_puerta_de_Japon/" target="_blank">La puerta de japon</a>
-            </p>
-            <p>
-                Posteriormente, diseñé una aplicación con carrito de compras utilizando React, lo que representó un desafío importante y me permitió desarrollar nuevas habilidades. (Insertar enlace a la página web del carrito de compras).  
-                <a href="https://la-puerta-de-japon.netlify.app/" target="_blank">La puerta de japon V2.0</a>            
-            </p>
-            <p>
-                Más recientemente, completé un curso de análisis de datos, donde aprendí a utilizar herramientas avanzadas que me ayudaron optimizar mis tareas laborales, mejorando tanto tiempos como recursos. 
-                <a href="https://lookerstudio.google.com/s/mWTk6q8mA60" target="_blank">Informe looker studio</a>                
-            </p>
-            <p>
-                Para ver mi cv podes ingresar al siguiente enlace:      
-                <a href="https://drive.google.com/file/d/1Aq8jLPz9HSzDnrIoa-yT5zT-Byw_dhns/view?usp=drive_link" target="_blank">CV Walter Romero</a>
-            </p>
-            
+        <section class="main-content-portfolio">
+            <div class="card">
+                <div class="card-image">                    
+                    <a href="https://walterjromero.github.io/La_puerta_de_Japon/" target="_blank"><img src="../media/img/image-3.jpg" alt="paginaejemplo"></a>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Adquirí mis conocimientos en programación a través de diversos cursos que me permitieron construir una sólida base técnica.
+                        Mi primer proyecto fue una página web sobre Japón y sus costumbres, desarrollada utilizando HTML y JavaScript. 
+                        <a href="https://walterjromero.github.io/La_puerta_de_Japon/" target="_blank">La puerta de japon</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">                    
+                    <a href="https://la-puerta-de-japon.netlify.app/" target="_blank"><img src="../media/img/image-2.jpg" alt="paginanetlify"></a>            
+                </div>
+                <div class="card-text">
+                    <p>
+                        Posteriormente, diseñé una aplicación con carrito de compras utilizando React, lo que representó un desafío importante y me permitió desarrollar nuevas habilidades. (Insertar enlace a la página web del carrito de compras).  
+                        <a href="https://la-puerta-de-japon.netlify.app/" target="_blank">La puerta de japon V2.0</a>            
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">                
+                    <a href="https://lookerstudio.google.com/s/mWTk6q8mA60" target="_blank"><img src="../media/img/image-4.jpg" alt="informelookerstudio"></a>                                        
+                </div>
+                <div class="card-text">
+                    <p>
+                        Más recientemente, completé un curso de análisis de datos, donde aprendí a utilizar herramientas avanzadas que me ayudaron optimizar mis tareas laborales, mejorando tanto tiempos como recursos. 
+                        <a href="https://lookerstudio.google.com/s/mWTk6q8mA60" target="_blank">Informe looker studio</a>                
+                    </p>
+                </div>    
+            </div>                   
         </section>
     </main>
-    <footer>
-        <p>Todos los derechos reservados</p>
+    <footer class="footer">
+        <p>Todos los derechos reservados. 2024 UADE</p>
     </footer>
 </body>
 </html>
