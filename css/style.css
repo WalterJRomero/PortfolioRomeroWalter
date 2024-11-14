@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:"Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 body{
@@ -18,7 +18,7 @@ body{
 }
 
 h1{    
-    font-weight: 500;
+    font-weight: 900;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;    
@@ -44,6 +44,18 @@ input {
 
 label {                       
       display:none;
+}
+
+img {
+    transition: filter 0.3s;
+}
+
+img:hover {
+    filter: grayscale(100%);
+}
+
+.subrayado{
+    text-decoration: underline;
 }
 
 .logo {
@@ -108,6 +120,10 @@ label {
     flex-direction: row;
     justify-content: space-between;    
     color:white;
+    font-size: 600;
+    margin:10px;
+    background: dimgray;
+    border-radius: 10px;
 }
 
 .main-image img{
@@ -136,7 +152,11 @@ label {
     flex-direction: column;
     gap: 20px; 
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;    
+}
+
+.main-content-portfolio .card{
+    background: dimgray;
 }
 
 .card {
@@ -144,7 +164,7 @@ label {
     align-items: center;    
     border-radius: 10px;
     overflow: hidden;     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
     padding: 15px;
 }
 
@@ -180,6 +200,7 @@ label {
     margin: 10px;
     display: flex;
     flex-direction: column;    
+    gap: 5px;
 }
 
 .formulario input{
@@ -207,6 +228,10 @@ label {
     color: #efdd74;
 }
 
+.texto-contacto{
+    color: white;
+    text-align: center;
+}
 
 @media (max-width: 768px) {
 
@@ -230,11 +255,11 @@ label {
     }
 
     .main-content{
-        flex-direction: column;
+        flex-direction: column;        
     }
     label { 
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         cursor: pointer;
         margin-right: 20px;
     }
@@ -268,7 +293,7 @@ label {
     }
 
     .main-image img{
-        width: 90%;
+        width: 100%;
         height: 90%;
         border-radius: 110px;
         padding: 10px;
@@ -299,6 +324,7 @@ label {
 
     .main-content{
         flex-direction: column;
+        text-align-last: center
     }
 
     .card{
